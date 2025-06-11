@@ -37,11 +37,11 @@ Comentários sobre textos litúrgicos
 
 Fluxo de Funcionamento
 
-    graph TD
-    B -->|Tema Luterano| C[Geração de Query Otimizada]
-    B -->|Tema Não Relevante| D[Resposta Direta]
-    C --> E[Recuperação de Documentos]
-    E --> F[Geração de Resposta Contextualizada]
-    D --> G[Resposta Padrão]
-    F --> H[Resposta ao Usuário]
-    G --> H
+graph TD
+B -->|Tema Luterano| C[Geração de Query Otimizada]
+B -->|Tema Não Relevante| D[Resposta Direta]
+C --> E[Recuperação de Documentos]
+E --> F[Geração de Resposta Contextualizada]
+D --> G[Resposta Padrão]
+F --> H[Resposta ao Usuário]
+G --> H
