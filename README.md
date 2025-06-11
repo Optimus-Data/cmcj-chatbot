@@ -37,8 +37,6 @@ Comentários sobre textos litúrgicos
 
 Fluxo de Funcionamento
 
-graph TD
-    A[Pergunta do Usuário] --> B{Avaliação de Relevância}
     B -->|Tema Luterano| C[Geração de Query Otimizada]
     B -->|Tema Não Relevante| D[Resposta Direta]
     C --> E[Recuperação de Documentos]
