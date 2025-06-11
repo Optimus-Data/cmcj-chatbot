@@ -35,6 +35,15 @@ Estudos bíblicos
 Reflexões teológicas
 Comentários sobre textos litúrgicos
 
+## Stack Tecnológica
+- **Backend**: Node.js + Express
+- **Banco**: Redis (conversas) + FAISS (vector store)
+- **IA**: LangChain + OpenAI (GPT-4/GPT-3.5)
+- **Embeddings**: text-embedding-3-large
+
+---
+*© 2025 Optimus Data Technology - Licença Acadêmica (ver [LICENSE](LICENSE))*
+
 ## Fluxo de Inteligência
 ```mermaid
 graph TD
