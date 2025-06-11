@@ -10,7 +10,7 @@ Interação natural com capacidade de manter contexto da conversa
 Controle de qualidade com logs detalhados de todas as interações
 Sistema híbrido que combina recuperação de informação com geração de texto
 
-🛠Arquitetura Técnica
+Arquitetura Técnica
 O sistema é composto por três componentes principais:
 
 1. Banco de Dados de Vetores (Vector Store)
@@ -35,13 +35,13 @@ Estudos bíblicos
 Reflexões teológicas
 Comentários sobre textos litúrgicos
 
-Fluxo de Funcionamento
-
+## Fluxo de Inteligência
+```mermaid
 graph TD
-B -->|Tema Luterano| C[Geração de Query Otimizada]
-B -->|Tema Não Relevante| D[Resposta Direta]
-C --> E[Recuperação de Documentos]
-E --> F[Geração de Resposta Contextualizada]
-D --> G[Resposta Padrão]
-F --> H[Resposta ao Usuário]
-G --> H
+  B -->|Tema Luterano| C[Geração de Query Otimizada]
+  B -->|Tema Não Relevante| D[Resposta Direta]
+  C --> E[Recuperação de Documentos]
+  E --> F[Geração de Resposta Contextualizada]
+  D --> G[Resposta Padrão]
+  F --> H[Resposta ao Usuário]
+  G --> H
