@@ -38,7 +38,7 @@ Comentários sobre textos litúrgicos
 ## Fluxo de Inteligência
 ```mermaid
 graph TD
-  B -->|Tema Luterano| C[Geração de Query Otimizada]
+  B[Análise do Tema da Pergunta] -->|Tema Luterano| C[Geração de Query Otimizada]
   B -->|Tema Não Relevante| D[Resposta Direta]
   C --> E[Recuperação de Documentos]
   E --> F[Geração de Resposta Contextualizada]
