@@ -1,16 +1,16 @@
-Projeto "Cinco Minutos com Jesus" - Hora Luterana
+## Projeto "Cinco Minutos com Jesus" - Hora Luterana
 
-Sobre o Projeto
+*Sobre o Projeto*
 O Cinco Minutos com Jesus é um assistente virtual inteligente desenvolvido para a Hora Luterana, especializado em temas bíblicos, citações e meditações cristãs no contexto da Igreja Luterana. Este projeto utiliza tecnologias de ponta em processamento de linguagem natural para oferecer respostas precisas e contextualizadas aos usuários.
 
-Funcionalidades Principais
+*Funcionalidades Principais*
 Respostas baseadas em documentos oficiais da Hora Luterana
 Citações precisas de autores e datas quando disponíveis
 Interação natural com capacidade de manter contexto da conversa
 Controle de qualidade com logs detalhados de todas as interações
 Sistema híbrido que combina recuperação de informação com geração de texto
 
-Arquitetura Técnica
+*Arquitetura Técnica*
 O sistema é composto por três componentes principais:
 
 1. Banco de Dados de Vetores (Vector Store)
@@ -28,7 +28,7 @@ GPT-4 para respostas finais (quando há contexto relevante)
 GPT-3.5 para geração de queries de busca
 Sistema rigoroso de prompts para garantir precisão teológica
 
-Base de Conhecimento
+*Base de Conhecimento*
 O sistema utiliza uma extensa coleção de documentos da Hora Luterana, incluindo:
 Meditações diárias
 Estudos bíblicos
@@ -45,3 +45,4 @@ graph TD
   D --> G[Resposta Padrão]
   F --> H[Resposta ao Usuário]
   G --> H
+  H --> I[Salvar Interação no Redis]
