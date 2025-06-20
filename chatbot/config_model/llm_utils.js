@@ -266,8 +266,8 @@ const determineRetrievalNeed = async (lastMessage, recentMessages, { retrievalPr
     if (relevance === 'true') {
         try {
             const retrievalPrompt = await retrievalPromptTemplate.format({
-                context: recentMessages,
-                question: lastMessage,
+                context: `Esse é o contexto e só deve ser usado caso a última mensagem sozinha não seja o suficiente para gerar a query, mas lembre-se o peso maior é sempre a última mensagem, SEMPRE: ${recentMessages}`,
+                question: `Esse é o peso maior, somente use o contexto caso essa mensagem definitivamente não seja o suficiente ${ lastMessage }`,
             });
             const queryResponse = await retrieval_llm.invoke(retrievalPrompt);
             retrieverQuery = queryResponse.content.trim();
